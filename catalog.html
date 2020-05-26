@@ -87,35 +87,47 @@
       </ul>
     </nav>
     <h1>Перфораторы</h1>
-    <form>
-      <h4>Фильтр</h4>
-      <h2>Цена:</h2>
-      <div>
-        <!-- Ползунок-->
-        <p>
-          <input type="text" value="0"> - <input type="text" value="30000">
-        </p>
-      </div>
-      <ul>
-        <h2>Производители:</h2>
-        <li>
-          <input type="checkbox" checked>Bosch</li>
-        <li>
-          <input type="checkbox">Интерскол</li>
-        <li>
-          <input type="checkbox" checked>Makita</li>
-        <li>
-          <input type="checkbox">Dewalt</li>
-        <li>
-          <input type="checkbox">Hitachi</li>
-      </ul>
-      <ul>
-        <h2>Питание:</h2>
-        <li>
-          <input type="radio" checked>Аккумуляторные</li>
-        <li>
-          <input type="radio">Сетевые</li>
-      </ul>
+    <form action="https://echo.htmlacademy.ru" method="POST" </form> <h4>Фильтр</h4>
+      <fieldset>
+        <legend>Цена:</legend>
+        <label for="price"></label>
+        <input type="range" min="0" max="30000" name="price" id="price">
+        <input type="text" value="0"> - <input type="text" value="30000">
+      </fieldset>
+      <fieldset>
+        <legend>Производители:</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="Bosch" id="Bosch" checked tabindex>
+            <label for="Bosch">Bosch</label>
+          </li>
+          <li>
+            <input type="checkbox" name="Интерскол" id="interskol">
+            <label for="interskol">Интерскол</label>
+          </li>
+          <li>
+            <input type="checkbox" name="Makita" id="Makita" checked>
+            <label for="Makita">Makita</label>
+          </li>
+          <li>
+            <input type="checkbox" name="Dewalt" id="Dewalt">
+            <label for="Dewalt">Dewalt</label>
+          </li>
+          <li>
+            <input type="checkbox" name="Hitachi" id="Hitachi">
+            <label for="Hitachi">Hitachi</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Питание:</legend>
+        <ul>
+          <li>
+            <input type="radio" name="power" value="Аккумуляторные" checked>Аккумуляторные</li>
+          <li>
+            <input type="radio" name="power" value="Сетевые">Сетевые</li>
+        </ul>
+      </fieldset>
       <button type="submit">Показать</button>
     </form>
     <div>
@@ -152,7 +164,7 @@
         </li>
         <li>
           <article>
-            <img src="img/product-bosch6000.jpg"  width="144" height="128" alt="Картинка товара">
+            <img src="img/product-bosch6000.jpg" width="144" height="128" alt="Картинка товара">
             <button type="submit">Купить</button>
             <button type="submit">В закладки</button>
             <h3>Перфоратор BOSCH BFG 6000</h3>
@@ -162,7 +174,7 @@
         </li>
         <li>
           <article>
-            <img src="img/product-bosch6000.jpg"  width="144" height="128" alt="Картинка товара">
+            <img src="img/product-bosch6000.jpg" width="144" height="128" alt="Картинка товара">
             <button type="submit">Купить</button>
             <button type="submit">В закладки</button>
             <h3>Перфоратор BOSCH BFG 6000</h3>

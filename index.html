@@ -220,7 +220,7 @@
         </p>
         <img src="img/sevices-delivery.png" width="468" height="261" alt="Доставка">
         </article>
-        <article>
+        <article class="visually-hidden">
           <h2>Гарантия</h2>
           <p>
             Если купленный у нас товар поломается или заискрит,  а также в случае пожара, спровоцированного его
@@ -229,7 +229,7 @@
           </p>
           <img src="img/services-guarantee.png" width="389" height="283" alt="Гарантия">
         </article>
-        <article>
+        <article class="visually-hidden">
           <h2>Кредит</h2>
           <p>
             Залезть в долговую яму стало проще!  Кредитные консультанты придут вам на помощь.
@@ -326,6 +326,18 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
     </p>
   </footer>
+  <section class="visually-hidden">
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <label for="name">Ваше имя:</label>
+      <input type="text" id="name" name="name" placeholder="Имя Фамилия" required>
+      <label for="email">Ваш e-mail:</label>
+      <input type="text" id="email" name="email" placeholder="email@example.com">
+      <label for="letter">Текст письма:</label>
+      <textarea id="letter" name="letter" placeholder="В свободной форме"></textarea>
+      <button type="submit">Оформть заказ</button>
+    </form>
+    <button type="button"></button>
+  </section>
 </body>
 
 </html>
