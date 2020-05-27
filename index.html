@@ -220,7 +220,7 @@
         </p>
         <img src="img/sevices-delivery.png" width="468" height="261" alt="Доставка">
         </article>
-        <article class="visually-hidden">
+        <article>
           <h2>Гарантия</h2>
           <p>
             Если купленный у нас товар поломается или заискрит,  а также в случае пожара, спровоцированного его
@@ -229,7 +229,7 @@
           </p>
           <img src="img/services-guarantee.png" width="389" height="283" alt="Гарантия">
         </article>
-        <article class="visually-hidden">
+        <article>
           <h2>Кредит</h2>
           <p>
             Залезть в долговую яму стало проще!  Кредитные консультанты придут вам на помощь.
@@ -326,21 +326,26 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
     </p>
   </footer>
-  <section class="visually-hidden">
+  <section>
     <form action="https://echo.htmlacademy.ru" method="get">
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" name="name" placeholder="Имя Фамилия" required>
-      <label for="email">Ваш e-mail:</label>
-      <input type="text" id="email" name="email" placeholder="email@example.com" required>
-      <label for="letter">Текст письма:</label>
-      <textarea id="letter" name="letter" placeholder="В свободной форме" required></textarea>
+      <label><span>Ваше имя:</span>
+        <input type="text" name="name" placeholder="Имя Фамилия" required>
+      </label>
+      <label><span>Ваш e-mail:</span>
+        <input type="text" name="email" placeholder="email@example.com" required>
+      </label>
+      <label><span>Текст письма:</span>
+        <textarea name="letter" placeholder="В свободной форме" required></textarea>
+      </label>
       <button type="submit">Оформть заказ</button>
     </form>
-    <button type="button"><!--Закрыть--></button>
+    <button type="button">
+      <!--Закрыть--></button>
   </section>
-  <section class="visually-hidden">
+  <section>
     <!-- Сервис карт-->
-    <button type="button"><!--Закрыть--></button>
+    <button type="button">
+      <!--Закрыть--></button>
   </section>
 </body>
 

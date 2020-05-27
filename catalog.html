@@ -90,32 +90,43 @@
     <form action="https://echo.htmlacademy.ru" method="POST" </form> <h4>Фильтр</h4>
       <fieldset>
         <legend>Цена:</legend>
-        <label for="price"></label>
-        <input type="range" min="0" max="30000" name="price" id="price">
+        <label>
+          <input type="range" min="0" max="30000" name="price">
+        </label>
         <input type="text" value="0"> - <input type="text" value="30000">
       </fieldset>
       <fieldset>
         <legend>Производители:</legend>
         <ul>
           <li>
-            <input type="checkbox" name="Bosch" id="Bosch" checked tabindex>
-            <label for="Bosch">Bosch</label>
+            <label>
+              <input type="checkbox" name="Bosch" checked>
+              <span>Bosch</span>
+            </label>
           </li>
           <li>
-            <input type="checkbox" name="Интерскол" id="interskol">
-            <label for="interskol">Интерскол</label>
+            <label>
+              <input type="checkbox" name="Интерскол">
+              <span>Интерскол</span>
+            </label>
           </li>
           <li>
-            <input type="checkbox" name="Makita" id="Makita" checked>
-            <label for="Makita">Makita</label>
+            <label>
+              <input type="checkbox" name="Makita" checked>
+              <span>Makita</span>
+            </label>
           </li>
           <li>
-            <input type="checkbox" name="Dewalt" id="Dewalt">
-            <label for="Dewalt">Dewalt</label>
+            <label>
+              <input type="checkbox" name="Dewalt" id="Dewalt">
+              <span>Dewalt</span>
+            </label>
           </li>
           <li>
-            <input type="checkbox" name="Hitachi" id="Hitachi">
-            <label for="Hitachi">Hitachi</label>
+            <label>
+              <input type="checkbox" name="Hitachi" id="Hitachi">
+              <span>Hitachi</span>
+            </label>
           </li>
         </ul>
       </fieldset>
@@ -123,12 +134,16 @@
         <legend>Питание:</legend>
         <ul>
           <li>
-            <input type="radio" name="power" value="Аккумуляторные" id="rechargeable" checked>
-            <label for="rechargeable">Аккумуляторные</label>
+            <label>
+              <input type="radio" name="power" value="Аккумуляторные" checked>
+              <span>Аккумуляторные</span>
+            </label>
           </li>
           <li>
-            <input type="radio" name="power" value="Сетевые" id="network">
-            <label for="network">Сетевые</label>
+            <label>
+              <input type="radio" name="power" value="Сетевые" id="network">
+              <span>Сетевые</span>
+            </label>
           </li>
         </ul>
       </fieldset>
@@ -332,11 +347,12 @@
     <p>Обратная связь:<a href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
     <p>Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
   </footer>
-  <section class="visually-hidden">
+  <section>
     <p>Товар добавлен в корзину!</p>
     <button type="button">Оформить заказ</button>
     <button type="button">Продолжить покупки</button>
-    <button type="button"><!--Закрыть--></button>
+    <button type="button">
+      <!--Закрыть--></button>
   </section>
 </body>
 
