@@ -15,3 +15,444 @@
   --error: #BA2732;
   --lightgrey: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EAEAEA;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  background: var(--basic-background);
+}
+
+.footer {
+  background-color: #32425C;
+}
+
+.navigation,
+.dark-footer {
+  background-color: #293449;
+}
+
+.header-logo {
+  background-color: var(--basic-red);
+  color: white;
+  width: 220px;
+  height: 47px;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  text-align: center;
+}
+
+.search,
+.bookmarks,
+.basket,
+.btn-order,
+.nav-link,
+.footer-address,
+.footer-tel {
+  color: white;
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.input-search {
+  background-color: #293449;
+  border: none;
+}
+
+.btn-order {
+  background-color: var(--basic-green);
+  border: none;
+
+}
+
+.description {
+  font-family: Cuprum;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+}
+
+.header-tel {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+}
+
+.header-address {
+  font-family: Cuprum;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425C;
+}
+
+.btns-login,
+.user-btns,
+.account,
+.nav-list,
+.breadcrumbs,
+.form-list,
+.sort-list,
+.pagination,
+.products {
+  list-style: none;
+}
+
+.user-item,
+.account-item,
+.nav-li,
+.breadcrumb,
+.sort-link,
+.page {
+  display: inline;
+}
+
+.btn-login,
+.user,
+.user-logout {
+  font-family: Cuprum;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: var(--wight);
+  border: none;
+  align-items: center;
+}
+
+.account-item {
+  font-family: Cuprum;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425C;
+}
+
+.orders,
+.personal-account {
+  color: #32425C;
+}
+
+.nav {
+  height: 60px;
+  background-color: #32425C;
+  box-shadow: inset 0px -5px 0px #293449;
+}
+
+.nav-footer {
+  background-color: #32425C;
+}
+
+.breadcrumb-link,
+.form-filter,
+.sort,
+.sort-link,
+.btn-pagination {
+  font-family: PT Sans;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.form-subtitle {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.filter-input {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.form-filter,
+.sort-list {
+  background-color: #F7F3EC;
+  ;
+}
+
+.nav-link {
+  color: var(--wight);
+}
+
+.feature {
+  width: 300px;
+  height: 123px;
+}
+
+.feature-list {
+  list-style: none;
+}
+
+.feature-title {
+  font-family: Cuprum;
+  font-style: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--wight);
+}
+
+.btn-feature {
+  color: var(--wight);
+  background-color: rgb(255, 255, 255, 30%);
+  font-family: Cuprum;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.feature-material {
+  background-color: var(--special-ylellow);
+}
+
+.feature-tool {
+  background-color: var(--special-blue);
+}
+
+.features-technic {
+  background-color: var(--special-lilac);
+}
+
+.feature-sales {
+  background-color: var(--special-greenlight);
+}
+
+.feature-delivery {
+  background-color: var(--special-yellowlight);
+}
+
+.slide-title {
+  font-family: Cuprum;
+  font-style: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--wight);
+}
+
+.slide-desc {
+  font-family: Cuprum;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--wight);
+}
+
+.btn {
+  background-color: var(--basic-red);
+  font-family: Cuprum;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--wight);
+  text-transform: uppercase;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  text-align: center;
+  display: inline;
+}
+
+.btn-white {
+  background-color: #fff;
+  color: black;
+  border: 1px solid #E5E5E5;
+}
+
+.title {
+  font-family: Cuprum;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425C;
+  display: inline;
+}
+
+.products-header,
+.maker-header {
+  background-color: #f9f5f0;
+  height: 89px;
+}
+
+.product {
+  border: 1px solid #EAEAEA;
+  width: 220px;
+  height: 318px;
+  text-align: center;
+}
+
+.product-title,
+.product-old-price,
+.product-new-price {
+  font-family: PT Sans;
+  font-style: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.product-old-price {
+  color: #a9a9a9;
+}
+
+.product-new-price {
+  color: var(--wight);
+}
+
+.btn-buy {
+  background-color: var(--basic-green);
+  color: var(--wight);
+  font-family: Cuprum;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  height: 38px;
+  width: 135px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  display: none;
+}
+
+.btn-bookmark {
+  background-color: var(--wight);
+  font-family: Cuprum;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425C;
+  text-transform: uppercase;
+  height: 38px;
+  width: 135px;
+  border: 3px solid var(--basic-green);
+  border-radius: 2px;
+  display: none;
+
+}
+
+.btn-pagination {
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 2px;
+  text-align: center;
+  padding: 10px;
+}
+
+.desc {
+  font-family: PT Sans;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.maker-list {
+  list-style: none;
+}
+
+.maker-item {
+  width: 220px;
+  height: 145px;
+  border: 1px solid #eaeaea;
+}
+
+.services,
+.perforators {
+  background-color: var(--basic-background);
+}
+
+.services-subtitle {
+  font-family: Cuprum;
+  font-style: bold;
+  font-size: 21px;
+  line-height: 30px;
+  padding-left: 22px;
+  padding-top: 13.5px;
+  padding-bottom: 17.5px;
+  list-style: none;
+  width: 240px;
+  background-color: #32425C;
+  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+}
+
+.services-guarantee,
+.services-credit {
+  display: none;
+}
+
+.services-input {
+  display: none;
+}
+
+.footer-nav-link {
+  color: var(--special-yellowlight);
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.copyright {
+  font-family: Cuprum;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--wight);
+}
+
+.socials {
+  list-style: none;
+}
+
+.socials-button {
+  display: inline;
+}
+
+.feedback,
+.developed {
+  font-family: Cuprum;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--wight);
+}
+
+.feedback-email,
+.site-developer {
+  color: var(--special-yellowlight);
+}
+
+.application,
+.map,
+.product-cart {
+  display: none;
+}
