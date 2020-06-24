@@ -57,7 +57,7 @@
       <p class="description">
         Интернет-магазин строительных материалов <br> и инструментов для ремонта
       </p>
-      <div>
+      <div  class="contact-info">
         <a class="header-tel" href="tel: +7(812)555-05-55">
           <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
             <path fill="#B7BFC8"
@@ -81,7 +81,7 @@
             </a>
           </li>
           <li class="user-item">
-            <a class="user-icon" href="">
+            <a class="logout-icon" href="">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
                 <g>
                   <path d="M21 8.5L12.125 0v6h-6v5h6v6z" />
@@ -167,78 +167,86 @@
             </li>
           </ul>
         </nav>
-        <h1 class="title">Перфораторы</h1>
+        <div class="section-header ">
+          <h1 class="title">Перфораторы</h1>
+        </div>
       </div>
       <div class="catalog-body">
-        <form action="https://echo.htmlacademy.ru" method="POST">
+        <form class="form" action="https://echo.htmlacademy.ru" method="GET">
           <h4 class="form-filter">Фильтр:</h4>
-          <fieldset>
+          <fieldset class="fieldset price-fieldset">
             <legend class="form-subtitle">Цена:</legend>
-            <label>
-              <input class="filter-input" type="range" min="0" max="30000" name="price">
-            </label>
-            <input type="text" value="0"> - <input type="text" value="30000">
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="
+                    width: 30%;
+                    margin-left: 20%">
+                  </div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="
+                left: 20%">
+                </div>
+                <div class="toggle toggle-max" tabindex="0" style="
+                left: 50%">
+                </div>
+              </div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">
+                <input type="number" name="min-price" value="0">
+              </label>-
+              <label class="max-price">
+                <input type="number" name="max-price" value="30000">
+              </label>
+            </div>
           </fieldset>
-          <fieldset>
-            <legend class="form-subtitle">Производители:</legend>
-            <ul class="form-list">
-              <li>
-                <label>
-                  <input type="checkbox" name="Bosch" checked>
-                  <span class="filter-input">Bosch</span>
-                </label>
+          <fieldset class="fieldset maker-fieldset">
+            <legend class="filter form-subtitle">Производители:</legend>
+            <ul>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
+                <label for="filter-bosch">Bosch</label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="Интерскол">
-                  <span class="filter-input">Интерскол</span>
-                </label>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="mr-natty" id="filter-mr-natty">
+                <label for="filter-interscol">Интерскол</label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="Makita" checked>
-                  <span class="filter-input">Makita</span>
-                </label>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="suavecito" id="filter-suavecito" checked>
+                <label for="filter-makita">Makita</label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="Dewalt" id="Dewalt">
-                  <span class="filter-input">Dewalt</span>
-                </label>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="malin-goetz" id="filter-malin-goetz">
+                <label for="filter-dewalt">Dewalt</label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="Hitachi" id="Hitachi">
-                  <span class="filter-input">Hitachi</span>
-                </label>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="murrays" id="filter-murrays">
+                <label for="filter-hitachi">Hitachi</label>
               </li>
             </ul>
           </fieldset>
           <fieldset>
             <legend class="form-subtitle">Питание:</legend>
-            <ul class="form-list">
-              <li>
-                <label>
-                  <input type="radio" name="power" value="Аккумуляторные" checked>
-                  <span class="filter-input">Аккумуляторные</span>
-                </label>
+            <ul>
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="shaving" id="filter-rechargeable">
+                <label for="filter-rechargeable">Аккумуляторные</label>
               </li>
-              <li>
-                <label>
-                  <input type="radio" name="power" value="Сетевые" id="network">
-                  <span class="filter-input">Сетевые</span>
-                </label>
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="shaving" id="filter-networking">
+                <label for="filter-networking">Сетевые</label>
               </li>
             </ul>
           </fieldset>
-          <button class="btn btn-white" type="submit">Показать</button>
+          <button class="btn btn-white filter-button" type="submit">Показать</button>
         </form>
         <div class="product-cards">
           <div class="sorting">
             <ul class="sort-list">
               <h4 class="sort">Сортировка:</h4>
               <li>
-                <a class="sort-link">По цене</a>
+                <a class="sort-link active">По цене</a>
               </li>
               <li>
                 <a class="sort-link" href="">По типу</a>
@@ -249,7 +257,7 @@
             </ul>
             <ul class="sort-list">
               <li>
-                <a class="sort-link price-filter" href="">
+                <a class="sort-link price-filter active" href="">
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                     <path d="M5.5 0L0 10h11z" /></svg>
                 </a>
@@ -387,16 +395,16 @@
           </ul>
           <ul class="pagination">
             <li class="page">
-              <a class="btn-pagination">1</a>
+              <a class="btn-pagination active">1</a>
             </li>
             <li class="page">
-              <a class="btn-pagination" href="">2</a>
+              <a class="btn-pagination">2</a>
             </li>
             <li class="page">
-              <a class="btn-pagination" href="">3</a>
+              <a class="btn-pagination">3</a>
             </li>
             <li class="page">
-              <a class="btn-pagination" href="">Следующая</a>
+              <a class="btn-pagination next">Следующая</a>
             </li>
           </ul>
         </div>
@@ -511,12 +519,16 @@
       </div>
     </div>
   </footer>
-  <section class="product-cart">
-    <p>Товар добавлен в корзину!</p>
-    <button type="button">Оформить заказ</button>
-    <button type="button">Продолжить покупки</button>
-    <button type="button">
-      <!--Закрыть--></button>
+  <section class="modal product-cart">
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    <div class="modal-cart">
+      <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66"><circle fill="#63A63E" cx="33" cy="33" r="33"/><path fill="#FFF" d="M49.641 21.066a1.003 1.003 0 0 0-1.414 0L29.788 39.504a1.003 1.003 0 0 1-1.414 0l-8.14-8.139a1.003 1.003 0 0 0-1.414 0L15.285 34.9a1.003 1.003 0 0 0 0 1.414l13.089 13.09a1.003 1.003 0 0 0 1.414 0l3.536-3.536 1.414-1.414 18.438-18.438a1.003 1.003 0 0 0 0-1.414l-3.535-3.536z"/></svg>
+      <p>Товар добавлен в корзину!</p>
+    </div>
+    <div class="modal-footer">
+    <button class="btn" type="button">Оформить заказ</button>
+    <button class="btn-white" type="button">Продолжить покупки</button>
+</div>
   </section>
 </body>
 
