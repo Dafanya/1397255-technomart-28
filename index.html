@@ -16,7 +16,7 @@
       <nav class="navigation basic-width">
         <a class="header-logo">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            preserveAspectRatio="xMidYMid" width="136.5" height="21.59" viewBox="0 0 136.5 21.59">
+            preserveAspectRatio="xMidYMid" width="108" height="18" viewBox="0 0 136.5 21.59">
             <defs>
               <style>
                 .cls-1 {
@@ -31,26 +31,23 @@
               class="cls-1" />
           </svg>
         </a>
-        <label>
-          <svg class="header-icons" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-            <path fill="#ffffff"
-              d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
-          </svg>
-          <input class="input-search search" ctype="text" placeholder="Поиск:">
+        <label class="search-label">
+          <input class="input-search" type="text" placeholder="Поиск:">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
         </label>
-        <a class="bookmarks" href="">
+        <a class="bookmarks link" href="">
           <svg class="header-icons" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
             <path fill="#ffffff"
               d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z" />
           </svg>
           <span>Закладки: 0</span></a>
-        <a class="basket" href="">
+        <a class="basket link" href="">
           <svg class="header-icons" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
             <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
             <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5" />
             <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg>
           <span>Корзина: 0</span></a>
-        <button class="btn-order" type="button">Оформить заказ</button>
+        <button class="btn-order link" type="button">Оформить заказ</button>
       </nav>
     </div>
     <div class="site-description basic-width">
@@ -157,23 +154,29 @@
       </ul>
       <div class="features-info">
         <div class="features-slider">
-          <div class="features-slide">
-            <h2 class="slide-title">Перфораторы</h2>
-            <p class="slide-desc">Настоящие мужские игрушки</p>
+          <div class="features-slide slide-active">
+            <div>
+              <h2 class="slide-title">Перфораторы</h2>
+              <p class="slide-desc">Настоящие мужские игрушки</p>
+            </div>
             <img class="slide-img" src="img/img-slide1.jpg" width="620" height="266" alt="Картинка слайдера">
             <a class="btn" href="catalog.html">Открыть каталог</a>
           </div>
-          <div class="features-slide active">
-            <h2 class="slide-title">Дрели</h2>
-            <p class="slide-desc">Соседям на радость!</p>
+          <div class="features-slide">
+            <div>
+              <h2 class="slide-title">Дрели</h2>
+              <p class="slide-desc">Соседям на радость!</p>
+            </div>
             <img class="slide-img" src="img/img-slide2.jpg" width="620" height="266" alt="Картинка слайдера">
             <a class="btn" href="">Открыть каталог</a>
           </div>
           <button class="slide-left">
             <svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M19.9243 0.941406L21.9225 2.98921L4.90696 20.436L21.978 37.9375L19.9789 39.9853L0.910609 20.436L19.9243 0.941406Z" fill="white"/>
-              </svg>
-               </button>
+              <path
+                d="M19.9243 0.941406L21.9225 2.98921L4.90696 20.436L21.978 37.9375L19.9789 39.9853L0.910609 20.436L19.9243 0.941406Z"
+                fill="white" />
+            </svg>
+          </button>
           <button class="slide-right">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
               <path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z" />
@@ -181,10 +184,10 @@
           </button>
           <ul class="indicators">
             <li>
-              <button class="slider-indicator"></button>
+              <button class="slider-indicator active-indicator"></button>
             </li>
             <li>
-              <button class="slider-indicator active"></button>
+              <button class="slider-indicator"></button>
             </li>
           </ul>
         </div>
@@ -231,9 +234,18 @@
       <ul class="products-main-page">
         <li class="product-item">
           <article class="product">
-            <img class="product-img" src="img/product-bosch9000.jpg" width="184" height="164" alt="Картинка товара">
-            <button class="btn-buy" type="button">Купить</button>
-            <button class="btn-bookmark" type="button">В закладки</button>
+            <div class="product-image-holder">
+              <img class="product-img" src="img/product-bosch9000.jpg" width="184" height="164" alt="Картинка товара">
+              <div class="hover-buttons">
+                <button class="btn-buy" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                    <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
+                    <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5" />
+                    <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg>
+                  <span> Купить</span></button>
+                <button class="btn-bookmark" type="button">В закладки</button>
+              </div>
+            </div>
             <h3 class="product-title">Перфоратор BOSCH BFG 9000</h3>
             <del class="product-old-price">32500 Р.</del>
             <span class="product-new-price">25500 Р.</span>
@@ -241,45 +253,60 @@
         </li>
         <li class="product-item">
           <article class="product">
-            <img class="product-img" src="img/product-bosch3000.jpg" width="127" height="112" alt="Картинка товара">
-            <button class="btn-buy" type="button">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
-                <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5" />
-                <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg>
-              <span> Купить</span></button>
-            <button class="btn-bookmark" type="button">В закладки</button>
+            <span class="mark">new</span>
+            <div class="product-image-holder">
+              <img class="product-img" src="img/product-bosch3000.jpg" width="127" height="112" alt="Картинка товара">
+              <div class="hover-buttons">
+                <button class="btn-buy" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                    <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
+                    <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5" />
+                    <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg>
+                  <span> Купить</span></button>
+                <button class="btn-bookmark" type="button">В закладки</button>
+              </div>
+            </div>
             <h3 class="product-title">Перфоратор BOSCH BFG 3000</h3>
             <del class="product-old-price">22500 Р.</del>
-            <div class="price-button">
-              <span class="product-new-price">15500 Р.</span>
-              <span class="triangle"></span>
-            </div>
+            <span class="product-new-price">15500 Р.</span>
           </article>
         </li>
         <li class="product-item">
           <article class="product">
-            <img class="product-img" src="img/product-bosch6000.jpg" width="144" height="128" alt="Картинка товара">
-            <button class="btn-buy" type="button">Купить</button>
-            <button class="btn-bookmark" type="button">В закладки</button>
+            <div class="product-image-holder">
+              <img class="product-img" src="img/product-bosch6000.jpg" width="144" height="128" alt="Картинка товара">
+              <div class="hover-buttons">
+                <button class="btn-buy" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                    <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
+                    <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5" />
+                    <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg>
+                  <span> Купить</span></button>
+                <button class="btn-bookmark" type="button">В закладки</button>
+              </div>
+            </div>
             <h3 class="product-title">Перфоратор BOSCH BFG 6000</h3>
             <del class="product-old-price">30500 Р.</del>
-            <div class="price-button">
-              <span class="product-new-price">25500 Р.</span>
-              <span class="triangle"></span>
-            </div>
+            <span class="product-new-price">25500 Р.</span>
           </article>
         </li>
         <li class="product-item">
           <article class="product">
-            <img class="product-img" src="img/product-bosch2000.jpg" width="127" height="112" alt="Картинка товара">
-            <button class="btn-buy" type="button">Купить</button>
-            <button class="btn-bookmark" type="button">В закладки</button>
-            <h3 class="product-title">Перфоратор BOSCH BFG 2000</h3>
-            <div class="price-button">
-              <span class="product-new-price">12500 Р.</span>
-              <span class="triangle"></span>
+            <span class="mark">new</span>
+            <div class="product-image-holder">
+              <img class="product-img" src="img/product-bosch2000.jpg" width="127" height="112" alt="Картинка товара">
+              <div class="hover-buttons">
+                <button class="btn-buy" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                    <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
+                    <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5" />
+                    <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg>
+                  <span> Купить</span></button>
+                <button class="btn-bookmark" type="button">В закладки</button>
+              </div>
             </div>
+            <h3 class="product-title">Перфоратор BOSCH BFG 2000</h3>
+            <span class="product-new-price">12500 Р.</span>
           </article>
         </li>
       </ul>
@@ -291,34 +318,34 @@
       </div>
       <ul class="maker-list">
         <li class="maker-item">
-          <a class="maker-logo" href=""><img class="maker-logo" src="img/logo-bosch.png" width="126" height="37"
+          <a class="maker-link" href=""><img class="maker-logo" src="img/logo-bosch.png" width="126" height="37"
               alt="Лого производителя"></a>
         </li>
         <li class="maker-item">
-          <a class="maker-logo" href=""><img src="img/logo-makita.png" width="123" height="40"
+          <a class="maker-link" href=""><img class="maker-logo" src="img/logo-makita.png" width="123" height="40"
               alt="Лого производителя"></a>
         </li>
         <li class="maker-item">
-          <a class="maker-logo" href=""><img src="img/logo-dewalt.png" width="146" height="44"
+          <a class="maker-link" href=""><img class="maker-logo" src="img/logo-dewalt.png" width="146" height="44"
               alt="Лого производителя"></a>
         </li>
         <li class="maker-item">
-          <a class="maker-logo" href=""><img src="img/logo-interscol.png" width="200" height="88"
+          <a class="maker-link" href=""><img class="maker-logo" src="img/logo-interscol.png" width="200" height="88"
               alt="Лого производителя"></a>
         </li>
         <li class="maker-item">
-          <a class="maker-logo" href=""><img src="img/logo-hitachi.png" width="169" height="31"
+          <a class="maker-link" href=""><img class="maker-logo"src="img/logo-hitachi.png" width="169" height="31"
               alt="Лого производителя"></a>
         </li>
         <li class="maker-item">
-          <a class="maker-logo" href=""><img src="img/logo-lg.png" width="121" height="73" alt="Лого производителя"></a>
+          <a class="maker-link" href=""><img class="maker-logo" src="img/logo-lg.png" width="121" height="73" alt="Лого производителя"></a>
         </li>
         <li class="maker-item">
-          <a class="maker-logo" href=""><img src="img/logo-aeg.png" width="151" height="96"
+          <a class="maker-link" href=""><img class="maker-logo" src="img/logo-aeg.png" width="151" height="96"
               alt="Лого производителя"></a>
         </li>
         <li class="maker-item">
-          <a class="maker-logo" href=""><img src="img/logo-metabo.png" width="204" height="69"
+          <a class="maker-link" href=""><img class="maker-logo" src="img/logo-metabo.png" width="204" height="69"
               alt="Лого производителя"></a>
         </li>
       </ul>
@@ -336,7 +363,7 @@
             <li>
               <label>
                 <input class="services-input" type="radio" name="services" checked>
-                <span class="services-btn ">Доставка</span>
+                <span class="services-btn">Доставка</span>
               </label>
             </li>
             <li>
@@ -353,10 +380,10 @@
             </li>
           </ul>
           <div class="services-articles">
-            <article class="services-slide ">
+            <article class="services-slide">
               <h2 class="title">Доставка</h2>
               <p class="desc">
-                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! <br> Ведь мы неплохо
                 заработаем,<br> поднимая его на ваш этаж!
               </p>
               <img class="services-img" src="img/sevices-delivery.svg" width="468" height="261" alt="Доставка">
@@ -385,7 +412,7 @@
     </section>
     <div class="company-contact basic-width">
       <section class="company">
-        <h2 class="title">Компания "Техномарт"</h2>
+        <h2 class="title">Компания «Техномарт»</h2>
         <p class="desc">
           Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
           ремонта и строительства не оставит равнодушными любителей сэкономить на
@@ -400,13 +427,13 @@
           <li class="company-item">Автотрейдинг</li>
           <li class="company-item">ЖелДорЭкспедиция</li>
         </ul>
-        <a class="btn" href="">Подробнее о компании</a>
+        <a class="btn company-btn" href="">Подробнее о компании</a>
       </section>
       <section class="contacts">
         <h2 class="title">Контакты</h2>
         <p class="desc">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
         <img class="map-img" src="img/map.jpg" width="300" height="158" alt="Карта">
-        <button class="btn" type="button">Заблудились? Напишите нам!</button>
+        <button class="btn write-us" type="button">Заблудились? Напишите нам!</button>
       </section>
     </div>
   </main>
@@ -510,26 +537,34 @@
       <div class="popup-input">
         <label class="modal-label">
           <span>Ваше имя:</span>
-          <input class="modal-input" type="text" placeholder="Имя Фамилия" >
+          <input class="modal-input" name="name" type="text" placeholder="Имя Фамилия" >
         </label>
         <label class="modal-label">
           <span>Ваш e-mail:</span>
-          <input class="modal-input" type="email" placeholder="email@example.com">
+          <input class="modal-input" name="email" type="email" placeholder="email@example.com" >
         </label>
         <label class="modal-label">
           <span>Текст письма:</span>
-          <textarea class="modal-input modal-textarea" name="" id="" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+          <textarea class="modal-input modal-textarea" name="textarea" id="" cols="30" rows="10"
+            placeholder="В свободной форме" ></textarea>
         </label>
       </div>
       <div class="modal-footer">
-        <button class="btn btn-footer" value="Отправить">Отправить</button>
+        <button type="submit" class="btn btn-footer" value="Отправить">Отправить</button>
       </div>
     </form>
   </section>
   <section class="modal map">
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003044!2d30.320858716036227!3d59.93871916905428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1592937264552!5m2!1sru!2sru" width="943" height="449"  allowfullscreen="" aria-hidden="false" tabindex="0" title="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></iframe>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003044!2d30.320858716036227!3d59.93871916905428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1592937264552!5m2!1sru!2sru"
+      width="943" height="449" allowfullscreen="" aria-hidden="false" tabindex="0"
+      title="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></iframe>
   </section>
+  <script src="js/servicesSlider.js"></script>
+  <script src="js/modalForm.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>
