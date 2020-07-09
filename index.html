@@ -33,7 +33,10 @@
         </a>
         <label class="search-label">
           <input class="input-search" type="text" placeholder="Поиск:">
-          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+            <path
+              d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
+          </svg>
         </label>
         <a class="bookmarks link" href="">
           <svg class="header-icons" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
@@ -55,8 +58,8 @@
         Интернет-магазин строительных материалов <br> и инструментов для ремонта
       </p>
       <div class="contact-info">
-        <a class="header-tel" href="tel: +7(812)555-05-55">
-          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+        <a class="header-tel" href="tel:+78125550555">
+          <svg class="tel-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
             <path fill="#B7BFC8"
               d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978 4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504 1.339.656 2.003.154.671.505 1.643.408 2.289-.148 1.007-1.487 1.434-1.879 2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z" />
           </svg>
@@ -110,9 +113,11 @@
   </header>
   <main class="main">
     <section class="features basic-width">
+      <h2 class="visually-hidden">Наши преимущества</h2>
       <ul class="feature-list">
         <li class="features-item">
           <article class="feature feature-yellow">
+            <span class="mark">new</span>
             <h3 class="feature-title">Материалы</h3>
             <a class="btn-feature" href="">На любой вкус</a>
             <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" width="44" height="65" viewBox="0 0 44 65">
@@ -231,9 +236,9 @@
         <h2 class="title">Популярные товары:</h2>
         <a class="btn" href="">Все популярные товары</a>
       </div>
-      <ul class="products-main-page">
+      <ul class="products main-page">
         <li class="product-item">
-          <article class="product">
+          <article class="product" tabindex="0">
             <div class="product-image-holder">
               <img class="product-img" src="img/product-bosch9000.jpg" width="184" height="164" alt="Картинка товара">
               <div class="hover-buttons">
@@ -252,7 +257,7 @@
           </article>
         </li>
         <li class="product-item">
-          <article class="product">
+          <article class="product" tabindex="0">
             <span class="mark">new</span>
             <div class="product-image-holder">
               <img class="product-img" src="img/product-bosch3000.jpg" width="127" height="112" alt="Картинка товара">
@@ -272,7 +277,7 @@
           </article>
         </li>
         <li class="product-item">
-          <article class="product">
+          <article class="product" tabindex="0">
             <div class="product-image-holder">
               <img class="product-img" src="img/product-bosch6000.jpg" width="144" height="128" alt="Картинка товара">
               <div class="hover-buttons">
@@ -291,7 +296,7 @@
           </article>
         </li>
         <li class="product-item">
-          <article class="product">
+          <article class="product" tabindex="0">
             <span class="mark">new</span>
             <div class="product-image-holder">
               <img class="product-img" src="img/product-bosch2000.jpg" width="127" height="112" alt="Картинка товара">
@@ -334,11 +339,12 @@
               alt="Лого производителя"></a>
         </li>
         <li class="maker-item">
-          <a class="maker-link" href=""><img class="maker-logo"src="img/logo-hitachi.png" width="169" height="31"
+          <a class="maker-link" href=""><img class="maker-logo" src="img/logo-hitachi.png" width="169" height="31"
               alt="Лого производителя"></a>
         </li>
         <li class="maker-item">
-          <a class="maker-link" href=""><img class="maker-logo" src="img/logo-lg.png" width="121" height="73" alt="Лого производителя"></a>
+          <a class="maker-link" href=""><img class="maker-logo" src="img/logo-lg.png" width="121" height="73"
+              alt="Лого производителя"></a>
         </li>
         <li class="maker-item">
           <a class="maker-link" href=""><img class="maker-logo" src="img/logo-aeg.png" width="151" height="96"
@@ -457,7 +463,7 @@
               class="cls-1" />
           </svg> </a>
         <p class="footer-contact">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          <a class="footer-contact" href="tel: +7(812)5550555">+7 (812) 555-05-55 </a>
+          <a class="footer-contact" href="tel:+78125550555">+7 (812) 555-05-55 </a>
         </p>
       </div>
       <nav class="nav-footer">
@@ -523,7 +529,7 @@
           </li>
         </ul>
         <p class="feedback">Обратная связь:
-          <a href="mailto: mail@htmlacademy.ru"><span class="feedback-email">mail@htmlacademy.ru</span></a>
+          <a href="mailto:mail@htmlacademy.ru"><span class="feedback-email">mail@htmlacademy.ru</span></a>
         </p>
         <p class="developed">Разработано -
           <a href="https://htmlacademy.ru/intensive/htmlcss"><span class="site-developer">htmlacademy.ru</span></a>
@@ -532,21 +538,22 @@
     </div>
   </footer>
   <section class="modal write">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
     <form class="modal-form" action="https://echo.htmlacademy.ru" method="POST">
       <div class="popup-input">
         <label class="modal-label">
           <span>Ваше имя:</span>
-          <input class="modal-input" name="name" type="text" placeholder="Имя Фамилия" >
+          <input class="modal-input" name="name" type="text" placeholder="Имя Фамилия" required>
         </label>
         <label class="modal-label">
           <span>Ваш e-mail:</span>
-          <input class="modal-input" name="email" type="email" placeholder="email@example.com" >
+          <input class="modal-input" name="email" type="email" placeholder="email@example.com" required>
         </label>
         <label class="modal-label">
           <span>Текст письма:</span>
-          <textarea class="modal-input modal-textarea" name="textarea" id="" cols="30" rows="10"
-            placeholder="В свободной форме" ></textarea>
+          <textarea class="modal-input modal-textarea" name="textarea" cols="30" rows="10"
+            placeholder="В свободной форме" required></textarea>
         </label>
       </div>
       <div class="modal-footer">
@@ -555,16 +562,25 @@
     </form>
   </section>
   <section class="modal map">
+    <h2 class="visually-hidden">Карта</h2>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003044!2d30.320858716036227!3d59.93871916905428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1592937264552!5m2!1sru!2sru"
       width="943" height="449" allowfullscreen="" aria-hidden="false" tabindex="0"
       title="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></iframe>
   </section>
-  <script src="js/servicesSlider.js"></script>
-  <script src="js/modalForm.js"></script>
-  <script src="js/map.js"></script>
-  <script src="js/slider.js"></script>
+  <section class="modal popup-cart">
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    <h2 class="modal-cart">
+      Товар добавлен в корзину!
+    </h2>
+    <div class="modal-footer">
+      <button class="btn" type="button">Оформить заказ</button>
+      <button class="btn-white" type="button">Продолжить покупки</button>
+    </div>
+  </section>
+  <script src="js/script.min.js"></script>
+
 </body>
 
 </html>
