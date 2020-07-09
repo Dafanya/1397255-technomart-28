@@ -353,6 +353,8 @@ img {
   padding: 13px 24px;
   display: inline-block;
   box-sizing: border-box;
+  vertical-align: baseline;
+
 }
 
 .user {
