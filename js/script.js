@@ -111,22 +111,48 @@ window.addEventListener("keydown", function (evt) {
 });
 
 
-var ActiveSliderBtn = document.querySelector(".services-btn");
-var SliderBtn = document.querySelector(".services-btn:not(.active)");
+btnDelivery.addEventListener("click", changeServiceSlide);
+btnGuarantee.addEventListener("click", changeServiceSlide);
+btnCredit.addEventListener("click", changeServiceSlide);
+
+
+
+var sliderBtns = document.querySelector(".services-btn");
 var slide = document.querySelector(".services-slide:not(.active)");
 var slideActive = document.querySelector(".active");
 
-SliderBtn.addEventListener("click", function (evt) {
+sliderBtns.forEach(function (btn){
+  btn.addEventListener("click", function(e) {
+    if (!btn.classList.contains(".active")) {
+      btn.addEventListener("click", changeServiceSlide);
+    }
+  })
+});
+
+function changeServiceSlide(evt) {
   evt.preventDefault();
+  var slideDelivery = document.querySelector(".services-delivery");
+  var slideGuarantee = document.querySelector(".services-guarantee");
+  var slideCredit = document.querySelector(".services-credit");
+
+  var slide = document.querySelector(".services-slide:not(.active)");
+  var slideActive = document.querySelector(".active");
+
+  var sliderBtn = document.querySelector(".services-btn:not(.active)");
+  var activeSliderBtn = document.querySelector(".services-btn.active)");
+
+
   slide.classList.add("active");
   slideActive.classList.remove("active");
-});
+  sliderBtn.classList.add("active");
+  activeSliderBtn.classList.remove("active");
+}
+
 
 
 var left = document.querySelector(".slide-left");
 var right = document.querySelector(".slide-right");
 var indicators = document.querySelectorAll(".slider-indicator");
-222222
 left.addEventListener("click", changeSlide);
 right.addEventListener("click", changeSlide);
 

@@ -5,11 +5,10 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Техномарт Каталог</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/normalize.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -36,13 +35,13 @@
               d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z" />
           </svg>
           <span>Закладки: 0</span></a>
-        <a class="basket link" href="">
+        <a class="basket link active-basket" href="">
           <svg class="header-icons" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
             <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
             <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5" />
             <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg>
-          <span>Корзина: 0</span></a>
-        <button class="btn-order link" type="button">Оформить заказ</button>
+          <span>Корзина: 10</span></a>
+        <a class="btn-order link" type="button">Оформить заказ</a>
       </nav>
     </div>
     <div class="site-description basic-width">
@@ -172,9 +171,7 @@
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
-                  <div class="bar" style="
-                    width: 80%;
-                    margin-left: 0%">
+                  <div class="bar">
                   </div>
                 </div>
                 <button type="button" class="toggle toggle-min"></button>
@@ -320,8 +317,7 @@
               </article>
             </li>
             <li class="product-item">
-              <article class="product" tabindex="0">
-                <span class="mark">new</span>
+              <article class="product mark" tabindex="0">
                 <div class="product-image-holder">
                   <img class="product-img" src="img/product-bosch6000.jpg" width="144" height="128"
                     alt="Картинка товара">
@@ -342,8 +338,7 @@
               </article>
             </li>
             <li class="product-item">
-              <article class="product" tabindex="0">
-                <span class="mark">new</span>
+              <article class="product mark" tabindex="0">
                 <div class="product-image-holder">
                   <img class="product-img" src="img/product-bosch3000.jpg" width="127" height="112"
                     alt="Картинка товара">
@@ -385,8 +380,7 @@
               </article>
             </li>
             <li class="product-item">
-              <article class="product" tabindex="0">
-                <span class="mark">new</span>
+              <article class="product mark" tabindex="0">
                 <div class="product-image-holder">
                   <img class="product-img" src="img/product-bosch2000.jpg" width="127" height="112"
                     alt="Картинка товара">
@@ -406,8 +400,7 @@
               </article>
             </li>
             <li class="product-item">
-              <article class="product" tabindex="0">
-                <span class="mark">new</span>
+              <article class="product mark" tabindex="0">
                 <div class="product-image-holder">
                   <img class="product-img" src="img/product-bosch3000.jpg" width="127" height="112"
                     alt="Картинка товара">
@@ -449,8 +442,7 @@
               </article>
             </li>
             <li class="product-item">
-              <article class="product">
-                <span class="mark">new</span>
+              <article class="product mark">
                 <div class="product-image-holder">
                   <img class="product-img" src="img/product-bosch2000.jpg" width="127" height="112"
                     alt="Картинка товара">

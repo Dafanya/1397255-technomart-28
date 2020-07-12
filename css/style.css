@@ -169,7 +169,11 @@ img {
   display: flex;
   align-items: center;
 }
-
+.active-basket {
+  background-color: var(--basic-red);
+  padding-right: 21px;
+  padding-left: 12px;
+}
 .search-label {
   flex: 1;
   position: relative;
@@ -354,6 +358,7 @@ img {
   display: inline-block;
   box-sizing: border-box;
   vertical-align: baseline;
+  cursor: pointer;
 
 }
 
@@ -555,9 +560,10 @@ fieldset {
 }
 
 .range-controls .bar {
-  width: 70%;
   height: 2px;
   background: var(--green-sea);
+  width: 80%;
+  margin-left: 0
 }
 
 .range-controls .toggle {
@@ -1233,7 +1239,7 @@ fieldset {
   position: relative;
 }
 
-.mark {
+.mark:after {
   content: "new";
   position: absolute;
   font-family: Cuprum;
@@ -1514,8 +1520,6 @@ fieldset {
   background-color: var(--basic-background);
 }
 
-
-
 .services-subtitles {
   margin: 0;
   padding: 0;
@@ -1524,6 +1528,17 @@ fieldset {
   position: relative;
 }
 
+.services-subtitles:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 279px;
+  background-image: url(/img/Shadow.png);
+  top: -46px;
+  right: 0px;
+  z-index: 2;
+
+}
 .services {
   padding-top: 65px;
 }
