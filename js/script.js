@@ -5,6 +5,7 @@ var products = document.querySelector(".products");
 
 buyButtons.forEach(function (button) {
   button.addEventListener("click", function (e) {
+    event.preventDefault()
     if (!popupCart.classList.contains("popup-show")) {
       popupCart.classList.add("popup-show");
     }
@@ -92,7 +93,9 @@ form.addEventListener("submit", function (evt) {
   if (!userName.value || !userEmail.value || !userTextarea.value) {
     evt.preventDefault();
     popup.classList.add("modal-error");
-    console.log("Нужно ввести Имя Фамилию и email");
+    setTimeout(function () {
+      popup.classList.remove("modal-error");
+    }, 1000);
   } else {
     if (isStorageSupport) {
       localStorage.setItem("userName", userName.value);
@@ -109,45 +112,6 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
-
-
-btnDelivery.addEventListener("click", changeServiceSlide);
-btnGuarantee.addEventListener("click", changeServiceSlide);
-btnCredit.addEventListener("click", changeServiceSlide);
-
-
-
-var sliderBtns = document.querySelector(".services-btn");
-var slide = document.querySelector(".services-slide:not(.active)");
-var slideActive = document.querySelector(".active");
-
-sliderBtns.forEach(function (btn){
-  btn.addEventListener("click", function(e) {
-    if (!btn.classList.contains(".active")) {
-      btn.addEventListener("click", changeServiceSlide);
-    }
-  })
-});
-
-function changeServiceSlide(evt) {
-  evt.preventDefault();
-  var slideDelivery = document.querySelector(".services-delivery");
-  var slideGuarantee = document.querySelector(".services-guarantee");
-  var slideCredit = document.querySelector(".services-credit");
-
-  var slide = document.querySelector(".services-slide:not(.active)");
-  var slideActive = document.querySelector(".active");
-
-  var sliderBtn = document.querySelector(".services-btn:not(.active)");
-  var activeSliderBtn = document.querySelector(".services-btn.active)");
-
-
-  slide.classList.add("active");
-  slideActive.classList.remove("active");
-  sliderBtn.classList.add("active");
-  activeSliderBtn.classList.remove("active");
-}
-
 
 
 var left = document.querySelector(".slide-left");
@@ -178,3 +142,28 @@ indicators.forEach(function (indicator) {
     }
   })
 });
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("services-slide");
+  var dots = document.getElementsByClassName("services-btn");
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
