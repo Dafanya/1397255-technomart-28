@@ -163,6 +163,11 @@ img {
   align-items: center;
 }
 
+.catalog-bokmarks {
+  padding: 9px 40px 9px 20px;
+
+}
+
 .basket {
   padding: 9px 26px;
   display: flex;
@@ -434,6 +439,10 @@ img {
   color: var(--special-dark-blue);
   position: relative;
   margin-left: 33px;
+}
+
+.my-orders {
+  margin-left: 14px;
 }
 
 .account-item::after {
@@ -1357,6 +1366,7 @@ fieldset {
   margin-bottom: 10px;
   box-sizing: border-box;
   cursor: pointer;
+  display: inline-block;
 }
 
 .cart-icon {
@@ -1386,7 +1396,7 @@ fieldset {
   padding-bottom: 9px;
   box-sizing: border-box;
   cursor: pointer;
-
+  display: inline-block;
 }
 
 .btn-bookmark:hover {
@@ -1618,11 +1628,12 @@ fieldset {
 
 .services-slide .desc {
   width: 280px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .services-slide .btn {
   border-radius: 5px;
+  display: inline-block;
 }
 
 
@@ -1823,6 +1834,10 @@ fieldset {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.write-us {
+  display: inline-block;
 }
 
 .modal {
