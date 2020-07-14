@@ -2054,6 +2054,8 @@ fieldset {
 
 .modal-footer .btn-white {
   width: 192px;
+  text-align: center;
+  padding: 10px 0;
 }
 
 .modal-cart:before {
